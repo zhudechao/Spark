@@ -84,6 +84,13 @@ export PATH
 
 ```
 ```
+修改编译脚本增加编译速度
+VERSION=2.4.2
+SPARK_HADOOP_VERSION=2.6.0-cdh5.7.0
+SPARK_HIVE=1
+SCALA_VERSION=2.11
+```
+```
 进入spark源码进行编译
 /root/software/spark-2.4.5/dev
 [root@hadoop001 spark-2.4.5]# ./dev/make-distribution.sh \
@@ -93,7 +100,8 @@ export PATH
 -Dhadoop.version=2.6.0-cdh5.7.0 \
 -Phive \
 -Phive-thriftserver \
--Pyarn
+-Pyarn \
+-Pkubernetes
 
 ```
 
