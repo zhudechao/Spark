@@ -19,5 +19,8 @@ object LogTest1App {
 
       (country,1)
     }).reduceByKey(_+_).sortBy(_._2,false).take(2).foreach(println)
+
+    lines.unpersist(true)
+    sc.stop();
   }
 }
