@@ -1,0 +1,1019 @@
+INFO main org.apache.spark.SparkContext - Running Spark version 2.2.0
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: LogTest1App
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 62394.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-8297c45a-4a61-46cb-b69a-213f647fcc0c
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2190ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+INFO main org.spark_project.jetty.server.Server - Started @2297ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@1c59df5a{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51850751{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@44e3760b{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5860f3d7{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1ddae9b5{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@24bdb479{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@34625ccd{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@65aa6596{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3383649e{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@f27ea3{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@346939bf{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@58670130{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@9bd0fa6{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@39dcf4b0{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@f6c03cb{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@18518ccf{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@768ccdc5{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10650953{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@162be91c{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1c9f0a20{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1cd201a8{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1992eaf4{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5049d8b2{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@631e06ab{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@186978a6{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@482d776b{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://192.168.43.93:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 62395.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 192.168.43.93:62395
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, 192.168.43.93, 62395, None)
+INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager 192.168.43.93:62395 with 912.3 MB RAM, BlockManagerId(driver, 192.168.43.93, 62395, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, 192.168.43.93, 62395, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, 192.168.43.93, 62395, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3add81c4{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 214.5 KB, free 912.1 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.4 KB, free 912.1 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on 192.168.43.93:62395 (size: 20.4 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 0 from textFile at LogTest1App.scala:12
+INFO main org.apache.hadoop.mapred.FileInputFormat - Total input paths to process : 1
+INFO main org.apache.spark.SparkContext - Starting job: collect at LogTest1App.scala:18
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Registering RDD 2 (map at LogTest1App.scala:13)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (collect at LogTest1App.scala:18) with 2 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 1 (collect at LogTest1App.scala:18)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 0)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 0)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at map at LogTest1App.scala:13), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 4.6 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.7 KB, free 912.1 MB)
+INFO dispatcher-event-loop-1 org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on 192.168.43.93:62395 (size: 2.7 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at map at LogTest1App.scala:13) (first 15 tasks are for partitions Vector(0, 1))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 2 tasks
+INFO dispatcher-event-loop-2 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4873 bytes)
+INFO dispatcher-event-loop-2 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 4873 bytes)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+INFO Executor task launch worker for task 1 org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+INFO Executor task launch worker for task 1 org.apache.spark.rdd.HadoopRDD - Input split: file:/Users/zhudechao/githup/Spark/spark_demo/input/2020-11-1.log:140+140
+INFO Executor task launch worker for task 0 org.apache.spark.rdd.HadoopRDD - Input split: file:/Users/zhudechao/githup/Spark/spark_demo/input/2020-11-1.log:0+140
+INFO Executor task launch worker for task 1 org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 1112 bytes result sent to driver
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1155 bytes result sent to driver
+INFO task-result-getter-1 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 132 ms on localhost (executor driver) (1/2)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 123 ms on localhost (executor driver) (2/2)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 0 (map at LogTest1App.scala:13) finished in 0.147 s
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - running: Set()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - waiting: Set(ResultStage 1)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - failed: Set()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (ShuffledRDD[3] at reduceByKey at LogTest1App.scala:18), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 3.2 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 1992.0 B, free 912.1 MB)
+INFO dispatcher-event-loop-3 org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on 192.168.43.93:62395 (size: 1992.0 B, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 1 (ShuffledRDD[3] at reduceByKey at LogTest1App.scala:18) (first 15 tasks are for partitions Vector(0, 1))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 2 tasks
+INFO dispatcher-event-loop-0 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 1.0 (TID 2, localhost, executor driver, partition 1, PROCESS_LOCAL, 4621 bytes)
+INFO dispatcher-event-loop-0 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 3, localhost, executor driver, partition 0, ANY, 4621 bytes)
+INFO Executor task launch worker for task 2 org.apache.spark.executor.Executor - Running task 1.0 in stage 1.0 (TID 2)
+INFO Executor task launch worker for task 3 org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 3)
+INFO Executor task launch worker for task 3 org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 non-empty blocks out of 2 blocks
+INFO Executor task launch worker for task 2 org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 0 non-empty blocks out of 2 blocks
+INFO Executor task launch worker for task 2 org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 2 ms
+INFO Executor task launch worker for task 3 org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 3 ms
+INFO Executor task launch worker for task 2 org.apache.spark.executor.Executor - Finished task 1.0 in stage 1.0 (TID 2). 1091 bytes result sent to driver
+INFO Executor task launch worker for task 3 org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 3). 1292 bytes result sent to driver
+INFO task-result-getter-2 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 1.0 (TID 2) in 33 ms on localhost (executor driver) (1/2)
+INFO task-result-getter-3 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 3) in 32 ms on localhost (executor driver) (2/2)
+INFO task-result-getter-3 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 1 (collect at LogTest1App.scala:18) finished in 0.035 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: collect at LogTest1App.scala:18, took 0.413530 s
+INFO Thread-1 org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+INFO Thread-1 org.spark_project.jetty.server.AbstractConnector - Stopped Spark@1c59df5a{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO Thread-1 org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://192.168.43.93:4040
+INFO dispatcher-event-loop-3 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO Thread-1 org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO Thread-1 org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO Thread-1 org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-3 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO Thread-1 org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-93ee98e4-ceb0-426a-b9c4-f28b682b39b1
+INFO main org.apache.spark.SparkContext - Running Spark version 2.2.0
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: LogTest1App
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 62451.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-827d0984-b7c4-44fb-b122-30e8c31a8da4
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2300ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+INFO main org.spark_project.jetty.server.Server - Started @2363ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@52d75328{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51850751{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@44e3760b{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5860f3d7{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1ddae9b5{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@24bdb479{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@34625ccd{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@65aa6596{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3383649e{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@f27ea3{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@346939bf{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@58670130{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@9bd0fa6{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@39dcf4b0{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@f6c03cb{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@18518ccf{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@768ccdc5{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10650953{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@162be91c{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1c9f0a20{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1cd201a8{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1992eaf4{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5049d8b2{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@631e06ab{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@186978a6{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@482d776b{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://192.168.43.93:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 62452.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 192.168.43.93:62452
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, 192.168.43.93, 62452, None)
+INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager 192.168.43.93:62452 with 912.3 MB RAM, BlockManagerId(driver, 192.168.43.93, 62452, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, 192.168.43.93, 62452, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, 192.168.43.93, 62452, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3add81c4{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 214.5 KB, free 912.1 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.4 KB, free 912.1 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on 192.168.43.93:62452 (size: 20.4 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 0 from textFile at LogTest1App.scala:12
+INFO main org.apache.hadoop.mapred.FileInputFormat - Total input paths to process : 1
+INFO main org.apache.spark.SparkContext - Starting job: sortBy at LogTest1App.scala:18
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Registering RDD 2 (map at LogTest1App.scala:13)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (sortBy at LogTest1App.scala:18) with 2 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 1 (sortBy at LogTest1App.scala:18)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 0)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 0)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at map at LogTest1App.scala:13), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 4.6 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.7 KB, free 912.1 MB)
+INFO dispatcher-event-loop-1 org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on 192.168.43.93:62452 (size: 2.7 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at map at LogTest1App.scala:13) (first 15 tasks are for partitions Vector(0, 1))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 2 tasks
+INFO dispatcher-event-loop-2 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4873 bytes)
+INFO dispatcher-event-loop-2 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 4873 bytes)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+INFO Executor task launch worker for task 1 org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+INFO Executor task launch worker for task 0 org.apache.spark.rdd.HadoopRDD - Input split: file:/Users/zhudechao/githup/Spark/spark_demo/input/2020-11-1.log:0+140
+INFO Executor task launch worker for task 1 org.apache.spark.rdd.HadoopRDD - Input split: file:/Users/zhudechao/githup/Spark/spark_demo/input/2020-11-1.log:140+140
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1155 bytes result sent to driver
+INFO Executor task launch worker for task 1 org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 1155 bytes result sent to driver
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 118 ms on localhost (executor driver) (1/2)
+INFO task-result-getter-1 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 110 ms on localhost (executor driver) (2/2)
+INFO task-result-getter-1 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 0 (map at LogTest1App.scala:13) finished in 0.136 s
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - running: Set()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - waiting: Set(ResultStage 1)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - failed: Set()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (MapPartitionsRDD[6] at sortBy at LogTest1App.scala:18), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 4.2 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.4 KB, free 912.1 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on 192.168.43.93:62452 (size: 2.4 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at sortBy at LogTest1App.scala:18) (first 15 tasks are for partitions Vector(0, 1))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 2 tasks
+INFO dispatcher-event-loop-3 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 1.0 (TID 2, localhost, executor driver, partition 1, PROCESS_LOCAL, 4621 bytes)
+INFO dispatcher-event-loop-3 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 3, localhost, executor driver, partition 0, ANY, 4621 bytes)
+INFO Executor task launch worker for task 2 org.apache.spark.executor.Executor - Running task 1.0 in stage 1.0 (TID 2)
+INFO Executor task launch worker for task 3 org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 3)
+INFO Executor task launch worker for task 2 org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 0 non-empty blocks out of 2 blocks
+INFO Executor task launch worker for task 3 org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 non-empty blocks out of 2 blocks
+INFO Executor task launch worker for task 2 org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 3 ms
+INFO Executor task launch worker for task 3 org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 2 ms
+INFO Executor task launch worker for task 2 org.apache.spark.executor.Executor - Finished task 1.0 in stage 1.0 (TID 2). 1320 bytes result sent to driver
+INFO task-result-getter-2 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 1.0 (TID 2) in 39 ms on localhost (executor driver) (1/2)
+INFO Executor task launch worker for task 3 org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 3). 1332 bytes result sent to driver
+INFO task-result-getter-3 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 3) in 39 ms on localhost (executor driver) (2/2)
+INFO task-result-getter-3 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 1 (sortBy at LogTest1App.scala:18) finished in 0.041 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: sortBy at LogTest1App.scala:18, took 0.389657 s
+INFO main org.apache.spark.SparkContext - Starting job: take at LogTest1App.scala:18
+INFO dag-scheduler-event-loop org.apache.spark.MapOutputTrackerMaster - Size of output statuses for shuffle 0 is 158 bytes
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Registering RDD 4 (sortBy at LogTest1App.scala:18)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 1 (take at LogTest1App.scala:18) with 1 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 4 (take at LogTest1App.scala:18)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 3)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List(ShuffleMapStage 3)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ShuffleMapStage 3 (MapPartitionsRDD[4] at sortBy at LogTest1App.scala:18), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_3 stored as values in memory (estimated size 4.2 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.4 KB, free 912.1 MB)
+INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerInfo - Added broadcast_3_piece0 in memory on 192.168.43.93:62452 (size: 2.4 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[4] at sortBy at LogTest1App.scala:18) (first 15 tasks are for partitions Vector(0, 1))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 3.0 with 2 tasks
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 3.0 (TID 4, localhost, executor driver, partition 1, PROCESS_LOCAL, 4610 bytes)
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 3.0 (TID 5, localhost, executor driver, partition 0, ANY, 4610 bytes)
+INFO Executor task launch worker for task 4 org.apache.spark.executor.Executor - Running task 1.0 in stage 3.0 (TID 4)
+INFO Executor task launch worker for task 5 org.apache.spark.executor.Executor - Running task 0.0 in stage 3.0 (TID 5)
+INFO Executor task launch worker for task 4 org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 0 non-empty blocks out of 2 blocks
+INFO Executor task launch worker for task 4 org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+INFO Executor task launch worker for task 5 org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 2 non-empty blocks out of 2 blocks
+INFO Executor task launch worker for task 5 org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+INFO Executor task launch worker for task 4 org.apache.spark.executor.Executor - Finished task 1.0 in stage 3.0 (TID 4). 1155 bytes result sent to driver
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 3.0 (TID 4) in 24 ms on localhost (executor driver) (1/2)
+INFO Executor task launch worker for task 5 org.apache.spark.executor.Executor - Finished task 0.0 in stage 3.0 (TID 5). 1284 bytes result sent to driver
+INFO task-result-getter-1 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 3.0 (TID 5) in 32 ms on localhost (executor driver) (2/2)
+INFO task-result-getter-1 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ShuffleMapStage 3 (sortBy at LogTest1App.scala:18) finished in 0.034 s
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - looking for newly runnable stages
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - running: Set()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - waiting: Set(ResultStage 4)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - failed: Set()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 4 (MapPartitionsRDD[8] at sortBy at LogTest1App.scala:18), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_4 stored as values in memory (estimated size 3.5 KB, free 912.0 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.0 KB, free 912.0 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_4_piece0 in memory on 192.168.43.93:62452 (size: 2.0 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 4 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[8] at sortBy at LogTest1App.scala:18) (first 15 tasks are for partitions Vector(0))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 4.0 with 1 tasks
+INFO dispatcher-event-loop-3 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 4.0 (TID 6, localhost, executor driver, partition 0, ANY, 4621 bytes)
+INFO Executor task launch worker for task 6 org.apache.spark.executor.Executor - Running task 0.0 in stage 4.0 (TID 6)
+INFO Executor task launch worker for task 6 org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 1 non-empty blocks out of 2 blocks
+INFO Executor task launch worker for task 6 org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+INFO Executor task launch worker for task 6 org.apache.spark.executor.Executor - Finished task 0.0 in stage 4.0 (TID 6). 1242 bytes result sent to driver
+INFO task-result-getter-2 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 4.0 (TID 6) in 17 ms on localhost (executor driver) (1/1)
+INFO task-result-getter-2 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 4 (take at LogTest1App.scala:18) finished in 0.017 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 1 finished: take at LogTest1App.scala:18, took 0.075039 s
+INFO main org.apache.spark.SparkContext - Starting job: take at LogTest1App.scala:18
+INFO dag-scheduler-event-loop org.apache.spark.MapOutputTrackerMaster - Size of output statuses for shuffle 0 is 158 bytes
+INFO dag-scheduler-event-loop org.apache.spark.MapOutputTrackerMaster - Size of output statuses for shuffle 1 is 160 bytes
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 2 (take at LogTest1App.scala:18) with 1 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 7 (take at LogTest1App.scala:18)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List(ShuffleMapStage 6)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 7 (MapPartitionsRDD[8] at sortBy at LogTest1App.scala:18), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_5 stored as values in memory (estimated size 3.5 KB, free 912.0 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.0 KB, free 912.0 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_5_piece0 in memory on 192.168.43.93:62452 (size: 2.0 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 5 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[8] at sortBy at LogTest1App.scala:18) (first 15 tasks are for partitions Vector(1))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 7.0 with 1 tasks
+INFO dispatcher-event-loop-3 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 7.0 (TID 7, localhost, executor driver, partition 1, ANY, 4621 bytes)
+INFO Executor task launch worker for task 7 org.apache.spark.executor.Executor - Running task 0.0 in stage 7.0 (TID 7)
+INFO Executor task launch worker for task 7 org.apache.spark.storage.ShuffleBlockFetcherIterator - Getting 1 non-empty blocks out of 2 blocks
+INFO Executor task launch worker for task 7 org.apache.spark.storage.ShuffleBlockFetcherIterator - Started 0 remote fetches in 0 ms
+INFO Executor task launch worker for task 7 org.apache.spark.executor.Executor - Finished task 0.0 in stage 7.0 (TID 7). 1242 bytes result sent to driver
+INFO task-result-getter-3 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 7.0 (TID 7) in 5 ms on localhost (executor driver) (1/1)
+INFO task-result-getter-3 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 7 (take at LogTest1App.scala:18) finished in 0.006 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 2 finished: take at LogTest1App.scala:18, took 0.019498 s
+INFO Thread-1 org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+INFO Thread-1 org.spark_project.jetty.server.AbstractConnector - Stopped Spark@52d75328{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO Thread-1 org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://192.168.43.93:4040
+INFO dispatcher-event-loop-2 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO Thread-1 org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO Thread-1 org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO Thread-1 org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-2 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO Thread-1 org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-d53d5c8a-96b6-4c2c-8984-2d493497282e
+INFO main org.apache.spark.SparkContext - Running Spark version 2.2.0
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: PartitionApp
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 50063.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-3e9b574c-5612-44d1-b3a3-91d39b100d9a
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2710ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+INFO main org.spark_project.jetty.server.Server - Started @2791ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@210f98f8{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3ce3db41{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6a66a204{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1d7f7be7{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@427b5f92{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7e3f95fe{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2c7d121c{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@67389cb8{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10fde30a{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1ce61929{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4bf3798b{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@74e47444{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@59d2103b{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e4de19b{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@46f699d5{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1991f767{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4c6daf0{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@659eef7{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2488b073{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@55787112{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7db82169{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@f74e835{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0b5baf{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2a3591c5{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2e029d61{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4052274f{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://192.168.43.93:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50064.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 192.168.43.93:50064
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, 192.168.43.93, 50064, None)
+INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager 192.168.43.93:50064 with 912.3 MB RAM, BlockManagerId(driver, 192.168.43.93, 50064, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, 192.168.43.93, 50064, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, 192.168.43.93, 50064, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1a1d3c1a{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.SparkContext - Starting job: foreach at PartitionApp.scala:20
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (foreach at PartitionApp.scala:20) with 2 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (foreach at PartitionApp.scala:20)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[2] at mapPartitionsWithIndex at PartitionApp.scala:14), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 2.2 KB, free 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1374.0 B, free 912.3 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on 192.168.43.93:50064 (size: 1374.0 B, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at mapPartitionsWithIndex at PartitionApp.scala:14) (first 15 tasks are for partitions Vector(0, 1))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 2 tasks
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 5070 bytes)
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 5074 bytes)
+INFO Executor task launch worker for task 1 org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 751 bytes result sent to driver
+INFO Executor task launch worker for task 1 org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 751 bytes result sent to driver
+INFO task-result-getter-1 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 63 ms on localhost (executor driver) (1/2)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 88 ms on localhost (executor driver) (2/2)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (foreach at PartitionApp.scala:20) finished in 0.105 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: foreach at PartitionApp.scala:20, took 0.508449 s
+INFO main org.spark_project.jetty.server.AbstractConnector - Stopped Spark@210f98f8{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://192.168.43.93:4040
+INFO dispatcher-event-loop-1 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-b2776899-3388-4c3c-8b4d-b50c8528a042
+INFO main org.apache.spark.SparkContext - Running Spark version 2.2.0
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: MapPartitionApp
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 52082.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-6e0f46ba-b157-45d0-940a-07c726ccc7ea
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2399ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+INFO main org.spark_project.jetty.server.Server - Started @2495ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@55e8ec2f{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77602954{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1d7f7be7{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1ddae9b5{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7e3f95fe{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2c7d121c{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@67389cb8{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@533377b{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1ce61929{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4bf3798b{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@74e47444{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@59d2103b{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e4de19b{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@46f699d5{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1991f767{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4c6daf0{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@659eef7{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2488b073{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@55787112{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7db82169{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@f74e835{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f28bd56{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2a3591c5{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@346a361{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4052274f{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@297ea53a{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://192.168.43.93:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52083.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 192.168.43.93:52083
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, 192.168.43.93, 52083, None)
+INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager 192.168.43.93:52083 with 912.3 MB RAM, BlockManagerId(driver, 192.168.43.93, 52083, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, 192.168.43.93, 52083, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, 192.168.43.93, 52083, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@159e366{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.AbstractConnector - Stopped Spark@55e8ec2f{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://192.168.43.93:4040
+INFO dispatcher-event-loop-2 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-2 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-fbc04978-21e8-4e15-8f84-69870bb8a7f3
+INFO main org.apache.spark.SparkContext - Running Spark version 2.2.0
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: MapPartitionApp
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 52098.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-dc267d47-689c-4fbc-9447-2543808c4dad
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2188ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+INFO main org.spark_project.jetty.server.Server - Started @2244ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@2f313cea{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64df9a61{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5860f3d7{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@42f3156d{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@24bdb479{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@34625ccd{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@65aa6596{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@419a20a6{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@f27ea3{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@346939bf{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@58670130{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@9bd0fa6{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@39dcf4b0{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@f6c03cb{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@18518ccf{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@768ccdc5{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10650953{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@162be91c{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1c9f0a20{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1cd201a8{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1992eaf4{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3276732{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@631e06ab{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@34a75079{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@482d776b{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@132ddbab{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://192.168.43.93:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52099.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on 192.168.43.93:52099
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, 192.168.43.93, 52099, None)
+INFO dispatcher-event-loop-2 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager 192.168.43.93:52099 with 912.3 MB RAM, BlockManagerId(driver, 192.168.43.93, 52099, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, 192.168.43.93, 52099, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, 192.168.43.93, 52099, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1c65121{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.SparkContext - Starting job: foreach at MapPartitionApp.scala:24
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (foreach at MapPartitionApp.scala:24) with 2 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (foreach at MapPartitionApp.scala:24)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[1] at map at MapPartitionApp.scala:22), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 1840.0 B, free 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1198.0 B, free 912.3 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on 192.168.43.93:52099 (size: 1198.0 B, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at map at MapPartitionApp.scala:22) (first 15 tasks are for partitions Vector(0, 1))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 2 tasks
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 5418 bytes)
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 5428 bytes)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+INFO Executor task launch worker for task 1 org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 708 bytes result sent to driver
+INFO Executor task launch worker for task 1 org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 708 bytes result sent to driver
+INFO task-result-getter-1 org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 62 ms on localhost (executor driver) (1/2)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 83 ms on localhost (executor driver) (2/2)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (foreach at MapPartitionApp.scala:24) finished in 0.097 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: foreach at MapPartitionApp.scala:24, took 0.409456 s
+INFO main org.spark_project.jetty.server.AbstractConnector - Stopped Spark@2f313cea{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://192.168.43.93:4040
+INFO dispatcher-event-loop-1 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-05c81725-7911-4f9e-960c-aaff0761f418
+INFO main org.apache.spark.SparkContext - Running Spark version 2.4.5
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: SparkSessionApp
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 51323.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-27a5a85c-7817-4154-ad92-035f31fd3978
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2805ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+INFO main org.spark_project.jetty.server.Server - Started @2871ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@29f8e972{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4602c2a9{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1e044120{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2cf23c81{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@35fe2125{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@94f6bfb{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@34645867{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2484f433{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@464649c{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7c22d4f{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f59185e{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@60bdf15d{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@47da3952{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51e4ccb3{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@46e8a539{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@495083a0{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5fd62371{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@28a0fd6c{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2b62442c{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@66629f63{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@841e575{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@27a5328c{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5c48c0c0{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10c8f62{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5ab14cb9{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5fb97279{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://zhudechaodembp:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51324.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on zhudechaodembp:51324
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, zhudechaodembp, 51324, None)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager zhudechaodembp:51324 with 912.3 MB RAM, BlockManagerId(driver, zhudechaodembp, 51324, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, zhudechaodembp, 51324, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, zhudechaodembp, 51324, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1a78dacd{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/Users/zhudechao/githup/Spark/spark_demo/spark-warehouse').
+INFO main org.apache.spark.sql.internal.SharedState - Warehouse path is 'file:/Users/zhudechao/githup/Spark/spark_demo/spark-warehouse'.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@779de014{/SQL,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5c41d037{/SQL/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1450078a{/SQL/execution,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@c68a5f8{/SQL/execution/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3eb631b8{/static/sql,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.sql.execution.streaming.state.StateStoreCoordinatorRef - Registered StateStoreCoordinator endpoint
+INFO main org.apache.spark.sql.execution.datasources.InMemoryFileIndex - It took 48 ms to list leaf files for 1 paths.
+INFO main org.apache.spark.sql.execution.datasources.InMemoryFileIndex - It took 4 ms to list leaf files for 1 paths.
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Pruning directories with: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Post-Scan Filters: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Output Data Schema: struct<value: string>
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Pushed Filters: 
+INFO main org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 312.937836 ms
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 220.0 KB, free 912.1 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 912.1 MB)
+INFO dispatcher-event-loop-1 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on zhudechaodembp:51324 (size: 20.6 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 0 from json at SparkSessionApp.scala:12
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+INFO main org.apache.spark.SparkContext - Starting job: json at SparkSessionApp.scala:12
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (json at SparkSessionApp.scala:12) with 1 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (json at SparkSessionApp.scala:12)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[3] at json at SparkSessionApp.scala:12), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 10.5 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.9 KB, free 912.0 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on zhudechaodembp:51324 (size: 5.9 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1163
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at json at SparkSessionApp.scala:12) (first 15 tasks are for partitions Vector(0))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8283 bytes)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+INFO Executor task launch worker for task 0 org.apache.spark.sql.execution.datasources.FileScanRDD - Reading File path: file:///Users/zhudechao/githup/Spark/spark_demo/input/2020-1-2.json, range: 0-27, partition values: [empty row]
+INFO Executor task launch worker for task 0 org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 11.12342 ms
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1850 bytes result sent to driver
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 161 ms on localhost (executor driver) (1/1)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (json at SparkSessionApp.scala:12) finished in 0.288 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: json at SparkSessionApp.scala:12, took 0.329083 s
+INFO main org.spark_project.jetty.server.AbstractConnector - Stopped Spark@29f8e972{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://zhudechaodembp:4040
+INFO dispatcher-event-loop-0 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO main org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO main org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO main org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-5c8093a9-a71f-4c75-a191-5d5ecf58009e
+INFO main org.apache.spark.SparkContext - Running Spark version 2.4.5
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: SparkSessionApp
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 51368.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-98409d7f-a0ea-4b32-ac0c-b8d5bd8cf9d1
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2507ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+INFO main org.spark_project.jetty.server.Server - Started @2572ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@3349fe08{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4602c2a9{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1e044120{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2cf23c81{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@35fe2125{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@94f6bfb{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@34645867{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2484f433{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@464649c{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7c22d4f{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f59185e{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@60bdf15d{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@47da3952{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51e4ccb3{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@46e8a539{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@495083a0{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5fd62371{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@28a0fd6c{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2b62442c{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@66629f63{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@841e575{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@27a5328c{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5c48c0c0{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10c8f62{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5ab14cb9{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5fb97279{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://zhudechaodembp:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51369.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on zhudechaodembp:51369
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, zhudechaodembp, 51369, None)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager zhudechaodembp:51369 with 912.3 MB RAM, BlockManagerId(driver, zhudechaodembp, 51369, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, zhudechaodembp, 51369, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, zhudechaodembp, 51369, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1a78dacd{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/Users/zhudechao/githup/Spark/spark_demo/spark-warehouse').
+INFO main org.apache.spark.sql.internal.SharedState - Warehouse path is 'file:/Users/zhudechao/githup/Spark/spark_demo/spark-warehouse'.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@779de014{/SQL,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5c41d037{/SQL/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1450078a{/SQL/execution,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@c68a5f8{/SQL/execution/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3eb631b8{/static/sql,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.sql.execution.streaming.state.StateStoreCoordinatorRef - Registered StateStoreCoordinator endpoint
+INFO main org.apache.spark.sql.execution.datasources.InMemoryFileIndex - It took 39 ms to list leaf files for 1 paths.
+INFO main org.apache.spark.sql.execution.datasources.InMemoryFileIndex - It took 1 ms to list leaf files for 1 paths.
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Pruning directories with: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Post-Scan Filters: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Output Data Schema: struct<value: string>
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Pushed Filters: 
+INFO main org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 288.728567 ms
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 220.0 KB, free 912.1 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 912.1 MB)
+INFO dispatcher-event-loop-1 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on zhudechaodembp:51369 (size: 20.6 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 0 from json at SparkSessionApp.scala:12
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+INFO main org.apache.spark.SparkContext - Starting job: json at SparkSessionApp.scala:12
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (json at SparkSessionApp.scala:12) with 1 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (json at SparkSessionApp.scala:12)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[3] at json at SparkSessionApp.scala:12), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 10.5 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.9 KB, free 912.0 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on zhudechaodembp:51369 (size: 5.9 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1163
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at json at SparkSessionApp.scala:12) (first 15 tasks are for partitions Vector(0))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8283 bytes)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+INFO Executor task launch worker for task 0 org.apache.spark.sql.execution.datasources.FileScanRDD - Reading File path: file:///Users/zhudechao/githup/Spark/spark_demo/input/2020-1-2.json, range: 0-27, partition values: [empty row]
+INFO Executor task launch worker for task 0 org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 12.016405 ms
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1850 bytes result sent to driver
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 129 ms on localhost (executor driver) (1/1)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (json at SparkSessionApp.scala:12) finished in 0.207 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: json at SparkSessionApp.scala:12, took 0.243855 s
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Pruning directories with: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Post-Scan Filters: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Output Data Schema: struct<_corrupt_record: string>
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Pushed Filters: 
+INFO main org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 17.357808 ms
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 220.0 KB, free 911.8 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 20.6 KB, free 911.8 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on zhudechaodembp:51369 (size: 20.6 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 2 from show at SparkSessionApp.scala:12
+INFO Thread-1 org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+INFO Thread-1 org.spark_project.jetty.server.AbstractConnector - Stopped Spark@3349fe08{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO Thread-1 org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://zhudechaodembp:4040
+INFO dispatcher-event-loop-1 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO Thread-1 org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO Thread-1 org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO Thread-1 org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO Thread-1 org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-cb737d34-e557-40f4-ac0f-985063febc3e
+INFO main org.apache.spark.SparkContext - Running Spark version 2.4.5
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: SparkSessionApp
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 51376.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-998d576a-7113-4bb2-be41-f96cf1a50e72
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2279ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+INFO main org.spark_project.jetty.server.Server - Started @2335ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@4e76dac{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@60fa3495{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2cf23c81{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3624da92{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@94f6bfb{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@34645867{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2484f433{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@60b71e8f{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7c22d4f{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f59185e{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@60bdf15d{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@47da3952{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51e4ccb3{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@46e8a539{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@495083a0{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5fd62371{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@28a0fd6c{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2b62442c{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@66629f63{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@841e575{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@27a5328c{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1e5f4170{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10c8f62{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@674c583e{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5fb97279{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@439a8f59{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://zhudechaodembp:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51377.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on zhudechaodembp:51377
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, zhudechaodembp, 51377, None)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager zhudechaodembp:51377 with 912.3 MB RAM, BlockManagerId(driver, zhudechaodembp, 51377, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, zhudechaodembp, 51377, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, zhudechaodembp, 51377, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19f9d595{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/Users/zhudechao/githup/Spark/spark_demo/spark-warehouse').
+INFO main org.apache.spark.sql.internal.SharedState - Warehouse path is 'file:/Users/zhudechao/githup/Spark/spark_demo/spark-warehouse'.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5c41d037{/SQL,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2234078{/SQL/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@c68a5f8{/SQL/execution,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69c6161d{/SQL/execution/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@796d3c9f{/static/sql,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.sql.execution.streaming.state.StateStoreCoordinatorRef - Registered StateStoreCoordinator endpoint
+INFO main org.apache.spark.sql.execution.datasources.InMemoryFileIndex - It took 33 ms to list leaf files for 1 paths.
+INFO main org.apache.spark.sql.execution.datasources.InMemoryFileIndex - It took 1 ms to list leaf files for 1 paths.
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Pruning directories with: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Post-Scan Filters: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Output Data Schema: struct<value: string>
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Pushed Filters: 
+INFO main org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 292.079086 ms
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 220.0 KB, free 912.1 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 912.1 MB)
+INFO dispatcher-event-loop-1 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on zhudechaodembp:51377 (size: 20.6 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 0 from json at SparkSessionApp.scala:12
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+INFO main org.apache.spark.SparkContext - Starting job: json at SparkSessionApp.scala:12
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (json at SparkSessionApp.scala:12) with 1 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (json at SparkSessionApp.scala:12)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[3] at json at SparkSessionApp.scala:12), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 10.5 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.9 KB, free 912.0 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on zhudechaodembp:51377 (size: 5.9 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1163
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at json at SparkSessionApp.scala:12) (first 15 tasks are for partitions Vector(0))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8283 bytes)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+INFO Executor task launch worker for task 0 org.apache.spark.sql.execution.datasources.FileScanRDD - Reading File path: file:///Users/zhudechao/githup/Spark/spark_demo/input/2020-1-2.json, range: 0-27, partition values: [empty row]
+INFO Executor task launch worker for task 0 org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 10.285333 ms
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1850 bytes result sent to driver
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 120 ms on localhost (executor driver) (1/1)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (json at SparkSessionApp.scala:12) finished in 0.227 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: json at SparkSessionApp.scala:12, took 0.268657 s
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Pruning directories with: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Post-Scan Filters: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Output Data Schema: struct<_corrupt_record: string>
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Pushed Filters: 
+INFO main org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 14.880855 ms
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 220.0 KB, free 911.8 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 20.6 KB, free 911.8 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on zhudechaodembp:51377 (size: 20.6 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 2 from show at SparkSessionApp.scala:13
+INFO Thread-1 org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+INFO Thread-1 org.spark_project.jetty.server.AbstractConnector - Stopped Spark@4e76dac{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO Thread-1 org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://zhudechaodembp:4040
+INFO dispatcher-event-loop-1 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO Thread-1 org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO Thread-1 org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO Thread-1 org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-0 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO Thread-1 org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-15f115c7-d830-47dd-8398-0f10118c62f9
+INFO main org.apache.spark.SparkContext - Running Spark version 2.4.5
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO main org.apache.spark.SparkContext - Submitted application: SparkSessionApp
+INFO main org.apache.spark.SecurityManager - Changing view acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: zhudechao
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(zhudechao); groups with view permissions: Set(); users  with modify permissions: Set(zhudechao); groups with modify permissions: Set()
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 51395.
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/blockmgr-479ba0bb-8e0c-48c0-b99f-b282e3ec7e38
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 912.3 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+INFO main org.spark_project.jetty.util.log - Logging initialized @2374ms
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+INFO main org.spark_project.jetty.server.Server - Started @2428ms
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@4e76dac{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@60fa3495{/jobs,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2cf23c81{/jobs/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3624da92{/jobs/job,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@94f6bfb{/jobs/job/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@34645867{/stages,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2484f433{/stages/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@60b71e8f{/stages/stage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7c22d4f{/stages/stage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f59185e{/stages/pool,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@60bdf15d{/stages/pool/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@47da3952{/storage,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51e4ccb3{/storage/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@46e8a539{/storage/rdd,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@495083a0{/storage/rdd/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5fd62371{/environment,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@28a0fd6c{/environment/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2b62442c{/executors,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@66629f63{/executors/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@841e575{/executors/threadDump,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@27a5328c{/executors/threadDump/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1e5f4170{/static,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10c8f62{/,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@674c583e{/api,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5fb97279{/jobs/job/kill,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@439a8f59{/stages/stage/kill,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.ui.SparkUI - Bound SparkUI to 0.0.0.0, and started at http://zhudechaodembp:4040
+INFO main org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+INFO main org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51396.
+INFO main org.apache.spark.network.netty.NettyBlockTransferService - Server created on zhudechaodembp:51396
+INFO main org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+INFO main org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, zhudechaodembp, 51396, None)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager zhudechaodembp:51396 with 912.3 MB RAM, BlockManagerId(driver, zhudechaodembp, 51396, None)
+INFO main org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, zhudechaodembp, 51396, None)
+INFO main org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, zhudechaodembp, 51396, None)
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19f9d595{/metrics/json,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/Users/zhudechao/githup/Spark/spark_demo/spark-warehouse').
+INFO main org.apache.spark.sql.internal.SharedState - Warehouse path is 'file:/Users/zhudechao/githup/Spark/spark_demo/spark-warehouse'.
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5c41d037{/SQL,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2234078{/SQL/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@c68a5f8{/SQL/execution,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69c6161d{/SQL/execution/json,null,AVAILABLE,@Spark}
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@796d3c9f{/static/sql,null,AVAILABLE,@Spark}
+INFO main org.apache.spark.sql.execution.streaming.state.StateStoreCoordinatorRef - Registered StateStoreCoordinator endpoint
+INFO main org.apache.spark.sql.execution.datasources.InMemoryFileIndex - It took 30 ms to list leaf files for 1 paths.
+INFO main org.apache.spark.sql.execution.datasources.InMemoryFileIndex - It took 1 ms to list leaf files for 1 paths.
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Pruning directories with: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Post-Scan Filters: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Output Data Schema: struct<value: string>
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Pushed Filters: 
+INFO main org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 290.271414 ms
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 220.0 KB, free 912.1 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 912.1 MB)
+INFO dispatcher-event-loop-1 org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on zhudechaodembp:51396 (size: 20.6 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 0 from json at SparkSessionApp.scala:12
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+INFO main org.apache.spark.SparkContext - Starting job: json at SparkSessionApp.scala:12
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Got job 0 (json at SparkSessionApp.scala:12) with 1 output partitions
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (json at SparkSessionApp.scala:12)
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[3] at json at SparkSessionApp.scala:12), which has no missing parents
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 10.5 KB, free 912.1 MB)
+INFO dag-scheduler-event-loop org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.9 KB, free 912.0 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on zhudechaodembp:51396 (size: 5.9 KB, free: 912.3 MB)
+INFO dag-scheduler-event-loop org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1163
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at json at SparkSessionApp.scala:12) (first 15 tasks are for partitions Vector(0))
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks
+INFO dispatcher-event-loop-1 org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8283 bytes)
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+INFO Executor task launch worker for task 0 org.apache.spark.sql.execution.datasources.FileScanRDD - Reading File path: file:///Users/zhudechao/githup/Spark/spark_demo/input/2020-1-2.json, range: 0-27, partition values: [empty row]
+INFO Executor task launch worker for task 0 org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 10.838655 ms
+INFO Executor task launch worker for task 0 org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1893 bytes result sent to driver
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 121 ms on localhost (executor driver) (1/1)
+INFO task-result-getter-0 org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+INFO dag-scheduler-event-loop org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (json at SparkSessionApp.scala:12) finished in 0.212 s
+INFO main org.apache.spark.scheduler.DAGScheduler - Job 0 finished: json at SparkSessionApp.scala:12, took 0.257902 s
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Pruning directories with: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Post-Scan Filters: 
+INFO main org.apache.spark.sql.execution.datasources.FileSourceStrategy - Output Data Schema: struct<_corrupt_record: string>
+INFO main org.apache.spark.sql.execution.FileSourceScanExec - Pushed Filters: 
+INFO main org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 19.099443 ms
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 220.0 KB, free 911.8 MB)
+INFO main org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 20.6 KB, free 911.8 MB)
+INFO dispatcher-event-loop-0 org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on zhudechaodembp:51396 (size: 20.6 KB, free: 912.3 MB)
+INFO main org.apache.spark.SparkContext - Created broadcast 2 from show at SparkSessionApp.scala:13
+INFO Thread-1 org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+INFO Thread-1 org.spark_project.jetty.server.AbstractConnector - Stopped Spark@4e76dac{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO Thread-1 org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://zhudechaodembp:4040
+INFO dispatcher-event-loop-1 org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+INFO Thread-1 org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+INFO Thread-1 org.apache.spark.storage.BlockManager - BlockManager stopped
+INFO Thread-1 org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+INFO dispatcher-event-loop-0 org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+INFO Thread-1 org.apache.spark.SparkContext - Successfully stopped SparkContext
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+INFO Thread-1 org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/1p/qwtn55_s0s7fb669yx9pnwgc0000gn/T/spark-fcb4f3fe-c4ef-4086-acfa-6c1a83b51b6c
